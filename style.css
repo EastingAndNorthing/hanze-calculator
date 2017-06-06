@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css?family=Oswald:300");
+@import url("https://fonts.googleapis.com/css?family=Roboto+Mono:300");
+
+html, body {
+  height: 100%;
+  font-family: "Oswald", sans-serif;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+
+.calculator {
+  width: 18em;
+  font-size: 1.5em;
+  box-shadow: 0 1em 2em rgba(0, 0, 0, 0.2), 0 0.3em 0.8em rgba(0, 0, 0, 0.2);
+}
+
+.calculator .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.calculator .topbar {
+  border-bottom: 1px solid #bbb;
+}
+
+.calculator button {
+  width: 100%;
+  height: 2.8em;
+  font-size: 1.1em;
+  text-align: center;
+  border: none;
+  background: #eee;
+  font-family: inherit;
+  font-weight: 300;
+  -webkit-transition: all 100ms ease-in-out;
+  transition: all 100ms ease-in-out;
+}
+.calculator button.accent {
+  background: #ff004d;
+}
+.calculator button.secondary {
+  background: #ccc;
+}
+.calculator button.dark {
+  background: #333;
+  color: white;
+}
+.calculator button.dark:hover {
+  box-shadow: 0 0.2em 0.8em rgba(255, 0, 77, 0.7);
+}
+.calculator button:hover {
+  cursor: pointer;
+  color: white;
+  background: #ff004d;
+}
+.calculator button:focus {
+  border: none;
+  outline: none;
+}
+
+.calculator .display {
+  padding: 0.4em 0.5em;
+  text-align: right;
+  font-family: "Roboto Mono", monospace;
+  font-weight: 700;
+  font-size: 2em;
+  color: white;
+  background: #e4e4e4;
+  background: #222;
+}
+.calculator .display .small {
+  font-size: 0.3em;
+  height: 1em;
+  color: #777;
+}
+
+
+

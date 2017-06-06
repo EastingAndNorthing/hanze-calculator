@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="nl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="calc.js" async></script>
+
+  <title>Calculator</title>
+  <meta name="author" content="Mark Oosting">
+</head>
+
+<body>
+	<div class="calculator">
+	  <div class="display">
+	    <div class="small" id="fulloperation"></div>
+	    <div id="currentValue">0</div>
+	    <div class="small" id="memory"></div>
+	  </div>
+	  <div class="topbar">
+	    <div class="row">
+	      <button class="memory" value="MR">MR</button>
+	      <button class="memory" value="MC">MC</button>
+	      <button class="memory" value="M+">M+</button>
+	      <button class="memory" value="M-">M-</button>
+	    </div>
+	  </div>
+		<div class="row">
+			<button class="secondary option-sci" value="pow2">x²</button>
+			<button class="secondary option-sci" value="pow3">x³</button>
+			<button class="secondary option-sci" value="inv">x⁻¹</button>
+			<button class="secondary option-sci" value="sqrt">√</button>
+		</div>
+	  <div class="input">
+	    <div class="row">
+	      <button class="number">7</button>
+	      <button class="number">8</button>
+	      <button class="number">9</button>
+	      <button class="secondary option" value="+">+</button>
+	    </div>
+	    <div class="row">
+	      <button class="number">4</button>
+	      <button class="number">5</button>
+	      <button class="number">6</button>
+	      <button class="secondary option" value="-">-</button>
+	    </div>
+	    <div class="row">
+	      <button class="number">1</button>
+	      <button class="number">2</button>
+	      <button class="number">3</button>
+	      <button class="secondary option" value="*">*</button>
+	    </div>
+	    <div class="row">
+	      <button class="number">0</button>
+	      <button id="decimal">.</button>
+	      <button id="sign">+/-</button>
+	      <button class="secondary option" value="÷">÷</button>
+	    </div>
+	  </div>
+	  <div class="row">
+	    <button class="dark" id="clear">CE</button>
+	    <button class="dark" id="equals">=</button>
+	  </div>
+	</div>
+</body>
+
+</html>
